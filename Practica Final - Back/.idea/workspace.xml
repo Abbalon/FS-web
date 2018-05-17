@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2409594d-4e74-425f-bd04-8f3b96f4d429" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/controller/ProyectoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/controller/ProyectoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/controller/RestURIConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/controller/RestURIConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FS/PRAC/FINAL8/controller/RestURIConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FS/PRAC/FINAL8/controller/RestURIConstants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Practica Final - Front/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica Final - Front/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Practica Final - Front/view/showProjects.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica Final - Front/view/showProjects.html" afterDir="false" />
     </list>
@@ -113,13 +109,22 @@
       <file leaf-file-name="ProyectoController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/controller/ProyectoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="141" column="7" lean-forward="true" selection-start-line="141" selection-start-column="7" selection-end-line="141" selection-end-column="7" />
+            <state relative-caret-position="88">
+              <caret line="124" column="38" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#addProyecto#0;class#ProyectoController#0" />
                 <element signature="method#delProyecto#0;class#ProyectoController#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestURIConstants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/controller/RestURIConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -224,7 +229,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
@@ -475,7 +480,7 @@
       <workItem from="1526279989188" duration="12841000" />
       <workItem from="1526451564604" duration="6022000" />
       <workItem from="1526538213558" duration="246000" />
-      <workItem from="1526545256888" duration="6919000" />
+      <workItem from="1526545256888" duration="7619000" />
     </task>
     <task id="LOCAL-00001" summary="Uncommet list empleados and proyectos">
       <created>1526545452492</created>
@@ -498,11 +503,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526552125895</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mostrar la info de un proyecto">
+      <created>1526553166160</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1526553166160</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81424000" />
+    <option name="totallyTimeSpent" value="82124000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -514,7 +526,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -530,7 +542,7 @@
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32908705" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32908705" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.10554371" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.104444444" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" weight="0.3288889" />
@@ -538,7 +550,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.27559912" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.27494457" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -597,7 +609,8 @@
     <MESSAGE value="Uncommet list empleados and proyectos" />
     <MESSAGE value="Add constructor to Proyect-employee" />
     <MESSAGE value="mostrar los empleados de un proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="mostrar los empleados de un proyecto" />
+    <MESSAGE value="mostrar la info de un proyecto" />
+    <option name="LAST_COMMIT_MESSAGE" value="mostrar la info de un proyecto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1022,13 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/controller/RestURIConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/controller/EmpleadoProyectoController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
@@ -1054,10 +1060,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/controller/RestURIConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/controller/ProyectoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="141" column="7" lean-forward="true" selection-start-line="141" selection-start-column="7" selection-end-line="141" selection-end-column="7" />
+        <state relative-caret-position="88">
+          <caret line="124" column="38" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#addProyecto#0;class#ProyectoController#0" />

@@ -1,4 +1,4 @@
-<div id="showproyects" ng-controller="ProjectsCtrl">
+<div class="center mr-auto ml-auto" id="showproyects" ng-controller="ProjectsCtrl">
 
     <div>
         <div class="card text-dark">
@@ -37,7 +37,7 @@
                     </tfoot>
                     <tbody>
                     <tr ng-repeat="project in projects" data-toggle="modal"
-                        data-target="#checkShowProject">
+                        data-target="#checkShowProject" title="Mostrar información del proyecto solicitado.">
                         <td>{{project.txDescripcion }}</td>
                         <td>{{project.fInicio | date:"dd-MM-yyyy"}}</td>
                         <td>{{project.fFin | date:"dd-MM-yyyy"}}</td>
@@ -104,7 +104,7 @@
                             </div>
                             <!-- Lugar -->
                             <div class="form-group">
-                                <label for="newProjectPlaceForm">Descrpción</label>
+                                <label for="newProjectPlaceForm">Lugar</label>
                                 <input type="text" class="form-control" id="newProjectPlaceForm"
                                        aria-describedby="palceHelp" placeholder="Lugar del proyecto"
                                        ng-model="project.txLugar">
@@ -151,28 +151,45 @@
                         <h3 class="card-title">Datos de proyecto</h3>
                     </div>
                     <div class="card-body">
-                        <form id="aProject">
-                            <!-- Nombre -->
-                            <div class="form-group">
-                                <label for="newProjectDescForm">Descrpción</label>
-                                <input type="text" class="form-control" id="newProjectDescForm"
-                                       aria-describedby="descHelp" placeholder="Descripción del proyecto"
-                                       ng-model="project.txDescripcion">
-                                <small id="descHelp" class="form-text text-muted">IDescriba el proyecto.
-                                </small>
+
+                        <form id="showProject">
+                            <div class="form-row">
+                                <!-- Decripción -->
+                                <div class="form-group col-md-6">
+                                    <label for="newProjectDescForm">Descrpción</label>
+                                    <input type="text" class="form-control" id="newProjectDescForm"
+                                           aria-describedby="descHelp" placeholder="Descripción del proyecto"
+                                           ng-model="project.txDescripcion">
+                                    <small id="descHelp" class="form-text text-muted">IDescriba el proyecto.
+                                    </small>
+                                </div>
+                                <!-- Lugar -->
+                                <div class="form-group col-md-6">
+                                    <label for="newProjectPlaceForm">Lugar</label>
+                                    <input type="text" class="form-control" id="newProjectPlaceForm"
+                                           aria-describedby="palceHelp" placeholder="Lugar del proyecto"
+                                           ng-model="project.txLugar">
+                                    <small id="palceHelp" class="form-text text-muted">Lugar donde se desarrolla el proyecto.
+                                    </small>
+                                </div>
                             </div>
-                            <!-- F. Inicio -->
-                            <div class="form-group">
-                                <label for="newProjectfAltForm">Fecha de início</label>
-                                <input type="date" class="form-control" id="newProjectfAltForm" aria-describedby="fAltHelp" placeholder="dd-mm-aaaa" ng-model="project.fInicio">
-                                <small id="fAltHelp" class="form-text text-muted">El formato fecha debe coincidir con "dd/mm/aaaa"</small>
+
+                            <div class="form-row">
+                                <!-- F. Inicio -->
+                                <div class="form-group col-md-4">
+                                    <label for="newProjectfAltForm">Fecha de início</label>
+                                    <input type="date" class="form-control" id="newProjectfAltForm" aria-describedby="fAltHelp" placeholder="dd-mm-aaaa" ng-model="project.fInicio">
+                                    <small id="fAltHelp" class="form-text text-muted">El formato fecha debe coincidir con "dd/mm/aaaa"</small>
+                                </div>
+                                <!-- F. Fin -->
+                                <div class="form-group col-md-4">
+                                    <label for="newProjectfFinForm">Fecha de finalización</label>
+                                    <input type="date" class="form-control" id="newProjectfFinForm" aria-describedby="fFinHelp" placeholder="dd-mm-aaaa" ng-model="project.fFin">
+                                    <small id="fFinHelp" class="form-text text-muted">El formato fecha debe coincidir con "dd/mm/aaaa"</small>
+                                </div>
+
                             </div>
-                            <!-- F. Fin -->
-                            <div class="form-group">
-                                <label for="newProjectfFinForm">Fecha de finalización</label>
-                                <input type="date" class="form-control" id="newProjectfFinForm" aria-describedby="fFinHelp" placeholder="dd-mm-aaaa" ng-model="project.fFin">
-                                <small id="fFinHelp" class="form-text text-muted">El formato fecha debe coincidir con "dd/mm/aaaa"</small>
-                            </div>
+
                             <!-- Lugar -->
                             <div class="form-group">
                                 <label for="newProjectPlaceForm">Descrpción</label>
@@ -191,6 +208,7 @@
                                 </small>
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>
