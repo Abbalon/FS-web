@@ -133,7 +133,7 @@ public class ProyectoController {
         List<Proyecto> allProyecto = null;
 
         try{
-            allProyecto = proyectoRepository.findAllByFBajaIsNull();
+            allProyecto = proyectoRepository.findAllByFBajaIsNullOrderByFInicio();
 //            allProyecto = proyectoRepository.findAll();
         }catch (Exception e){
             ManErrorControler.showError(logger, e);

@@ -24,4 +24,5 @@ public class RestURIConstants {
     public static final String ADD_PR_EM = "/prem";//POST
     public static final String DEL_PR_EM = "/prem";//[PUT | DELETE]
     public static final String GET_PR_EM = "/prem";//GET
+    public static final String GET_EM_TO_PRO = "/prem/{idPro}";//GET
 }

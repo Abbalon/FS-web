@@ -10,9 +10,12 @@ public interface ProyectoRepository extends JpaRepository<Proyecto, Integer> {
     /**
      * Muestra todos proyectos con F_BAJA igual a NULL
      * */
-    List<Proyecto> findAllByFBajaIsNull();
+    List<Proyecto> findAllByFBajaIsNullOrderByFInicio();
 
     /**
      * Devuelve si el proyecto tiene fecha de baja o está fianlizado*/
     boolean existsByIdProyectoAndFBajaIsNullAndFFinIsNull(int idProyecto);
+
+    /**Devuelve los empleados que esten asociados a un proyecto*/
+    Proyecto getProyectoByIdProyecto(int idProyecto);
 }
