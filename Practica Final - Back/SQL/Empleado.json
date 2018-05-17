@@ -1,0 +1,29 @@
+{
+    "txNif": "123123123",
+    "txNombre": "TX_NOMBRE",
+    "txApellido1": "TX_APELLIDO1",
+    "txApellido2": "TX_APELLIDO2",
+    "txEmail": "TX_EMAIL|123123123",
+    "nTelefono1": "N_TELEFONO1",
+    "nTelefono2": "N_TELEFONO2",
+    "fNacimiento": "2001-09-20T22:00:00.000+0000",
+    "fAlta": "2018-04-20T22:00:00.000+0000",
+    "cxEdocivil": "S",
+    "bServmilitar": "N"
+}
+
+{
+    "tx_Nif": "123123123",
+    "tx_Nombre": "TX_NOMBRE",
+    "tx_Apellido1": "TX_APELLIDO1",
+    "tx_Apellido2": "TX_APELLIDO2",
+    "tx_Email": "TX_EMAIL|123123123",
+    "n_Telefono1": "N_TELEFONO1",
+    "n_Telefono2": "N_TELEFONO2",
+    "f_Nacimiento": "2001-09-20T22:00:00.000+0000",
+    "f_Alta": "2018-04-20T22:00:00.000+0000",
+    "cx_Edocivil": "S",
+    "b_Servmilitar": "N"
+}
+
+id_Empleado, b_Servmilitar, cx_Edocivil, f_Alta, f_Baja, f_Nacimiento, n_Telefono1, n_Telefono2, tx_Apellido1, tx_Apellido2, tx_Email, tx_Nif, tx_Nombre

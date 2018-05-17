@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="angularJS">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica AngularJS</title>
+
+    <!--Responsive meta tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!--AngularJs script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.4.7/angular-route.js"></script>
+    <script src="https://code.angularjs.org/1.4.7/angular-resource.js"></script>
+
+
+</head>
+<body class="bg-dark text-light">
+
+<!-- NavBar -->
+<div class="container header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="img/logo-site.png" class="img-responsive img-rounded navbar-brand" href="index.html">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+                <!-- Home -->
+                <li class="nav-item active">
+                    <div class="container">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </div>
+                </li>
+
+                <!-- Empleado -->
+                <li class="nav-item">
+                    <div class="container">
+                        <a class="nav-link " href="#!/employee" id="navbarDropdownMenuLink" data-toggle="tooltip" data-placement="bottom" title="Mostrar empleados" >
+                            Empleados
+                        </a>
+                    </div>
+                </li>
+
+                <!-- Proyecto -->
+                <li class="nav-item">
+                    <div class="container">
+                        <a class="nav-link" href="#!/project" id="navbarDropdownMenuLink" data-toggle="tooltip" data-placement="bottom" title="Mostrar proyectos">
+                            Proyectos
+                        </a>
+                    </div>
+                </li>
+
+                <!-- Buscar droprigth-->
+                <li class="nav-item droprigth disabled">
+                    <div class="container">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-placement="bottom" title="¡Lo sentimos! Esta funcionalidad estará disponible en proximas releases.">
+                            Buscar
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown-item disabled">
+                                <form class="form-inline my-2 my-lg-0">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search disabled"
+                                           aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="dropdown-divider"></div>
+</div>
+
+<!-- Cuerpo de la página -->
+<div class="body container center main">
+    <!-- Vista dinámica -->
+    <div ng-view class="row"></div>
+</div>
+
+<!-- Footer -->
+<div class="footer mt-3">
+    <div class="dropdown-divider"></div>
+    <div class="text-center">Práctica final - Beca - Abril 2018</div>
+    <div class="font-italic text-right">made by: Alonso del Peso, Adrián</div>
+</div>
+
+<!--JQuery & Bootsrap scripts-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+<!--Controllers scripts-->
+<script src="app.js"></script>
+
+<!--Services scripts-->
+<script src="js/services/employeeService.js"></script>
+<script src="js/services/projectService.js"></script>
+
+<script src="js/controlers/employee.js"></script>
+<script src="js/controlers/project.js"></script>
+<!--<script src="js/controlers/showemployees.js"></script>-->
+
+
+</body>
+</html>

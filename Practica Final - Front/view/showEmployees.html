@@ -1,0 +1,172 @@
+<div id="showemployees" ng-controller="EmployeesCtrl">
+
+    <div>
+        <div class="card text-dark">
+            <div class="card-header">
+                <div class="row">
+                    <h1 class="card-title ml-3 mr-auto">Empleados</h1>
+                    <button type="button" class="btn btn-outline-primary btn-lg mr-3" data-toggle="modal" data-target="#checkInsert">
+                        Añadir
+                    </button>
+                    </li>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <table class="table table-hover table-striped table-dark">
+                    <caption data-toggle="tooltip" data-placement="bottom" title="No se muestran los empleados dados de baja.">Lista de empleados en activo</caption>
+                    <thead class="thead-dark">
+                    <th scope="col">NIF</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">1º Apellido</th>
+                    <th scope="col">2º Apellido</th>
+                    <th scope="col">Fecha de nacimiento</th>
+                    <th scope="col">Teléfono de contacto</th>
+                    <th scope="col">E-Mail</th>
+                    <th scope="col">Accion</th>
+
+                    </thead>
+                    <tfoot class="table-info">
+                    <th scope="col">NIF</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">1º Apellido</th>
+                    <th scope="col">2º Apellido</th>
+                    <th scope="col">Fecha de nacimiento</th>
+                    <th scope="col">Teléfono de contacto</th>
+                    <th scope="col">E-Mail</th>
+                    <th scope="col">Accion</th>
+                    </tfoot>
+                    <tbody>
+                    <tr ng-repeat="employee in employees">
+                        <th scope="row">{{employee.txNif}}</th>
+                        <td>{{employee.txNombre}}</td>
+                        <td>{{employee.txApellido1}}</td>
+                        <td>{{employee.txApellido2}}</td>
+                        <td>{{employee.fNacimiento | date:"dd-MM-yyyy"}}</td>
+                        <td>{{employee.nTelefono1}}</td>
+                        <td>{{employee.txEmail}}</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-warning btn-sm"
+                                    ng-click="delEmployee(employee)">Eliminar
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card-footer">
+                <p>
+                    Consultado a: {{date | date:'dd-MM-yyyy @ h:mm:ssa'}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modals -->
+<div class="modal fade text-dark" id="checkInsert" tabindex="-1" role="dialog" aria-labelledby="checkInsertLabel" aria-hidden="true" ng-controller="EmployeesCtrl">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="checkInsertLabel">Nuevo empleado</h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card w-auto text-dark mb-3">
+                    <div class="card-header">
+                        <h3 class="card-title">Datos de usuario</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="newemployee" >
+                            <!-- Nombre -->
+                            <div class="form-group">
+                                <label for="newEmployeeNameForm">Nombre</label>
+                                <input type="text" class="form-control" id="newEmployeeNameForm" aria-describedby="nameHelp" placeholder="Nombre del employee" ng-model="employee.txNombre">
+                                <small id="nameHelp" class="form-text text-muted">Inserte el nombre del empleado.</small>
+                            </div>
+                            <!-- Apellidos -->
+                            <div class="form-group">
+                                <label for="newEmployeeFNameForm">1º Apellido</label>
+                                <input type="text" class="form-control" id="newEmployeeFNameForm" aria-describedby="fNameHelp" placeholder="Primer apellido" ng-model="employee.txApellido1">
+                                <small id="fNameHelp" class="form-text text-muted">Inserte el primer apellido.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="newEmployeeFNameForm">2º Apellido</label>
+                                <input type="text" class="form-control" id="newEmployeeFNameForm" aria-describedby="sNameHelp" placeholder="Segundo apellido" ng-model="employee.txApellido2">
+                                <small id="sNameHelp" class="form-text text-muted">Inserte el segundo apellido.</small>
+                            </div>
+                            <!-- NIF -->
+                            <div class="form-group">
+                                <label for="newEmployeeNameForm">NIF</label>
+                                <input type="text" class="form-control" id="newEmployeeNameForm" aria-describedby="NIFHelp" placeholder="NIF" ng-model="employee.txNif">
+                                <small id="NIFHelp" class="form-text text-muted">NIF del empleado</small>
+                            </div>
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="newEmployeeNameForm">NIF</label>
+                                <input type="email" class="form-control" id="newEmployeeNameForm" aria-describedby="eMailHelp" placeholder="E-Mail" ng-model="employee.txEmail">
+                                <small id="eMailHelp" class="form-text text-muted">Email del empleado</small>
+                            </div>
+                            <!-- F. Nacimiento -->
+                            <div class="form-group">
+                                <label for="newEmployeeBDayForm">Fecha de nacimiento</label>
+                                <input type="date" class="form-control" id="newEmployeeBDayForm" aria-describedby="bDayHelp" placeholder="dd-mm-aaaa" ng-model="employee.fNacimiento">
+                                <small id="bDayHelp" class="form-text text-muted">El formato fecha debe coincidir con "dd/mm/aaaa"</small>
+                            </div>
+                            <!-- F. Alta -->
+                            <div class="form-group">
+                                <label for="newEmployeeBDayForm">Fecha de alta</label>
+                                <input type="date" class="form-control" id="newEmployeeBDayForm" aria-describedby="aDayHelp" placeholder="dd-mm-aaaa" ng-model="employee.fAlta">
+                                <small id="aDayHelp" class="form-text text-muted">El formato fecha debe coincidir con "dd/mm/aaaa"</small>
+                            </div>
+                            <!-- T1 -->
+                            <div class="form-group">
+                                <label for="newEmployeeNameForm">Teléfono 1</label>
+                                <input type="text" class="form-control" id="newEmployeeNameForm" aria-describedby="t1Help" placeholder="Nº Teléfono" ng-model="employee.nTelefono1">
+                                <small id="t1Help" class="form-text text-muted">Inserte el teléfono del empleado.</small>
+                            </div>
+                            <!-- T2 -->
+                            <div class="form-group">
+                                <label for="newEmployeeNameForm">Teléfono 2</label>
+                                <input type="text" class="form-control" id="newEmployeeNameForm" aria-describedby="t1Help" placeholder="Nº Teléfono" ng-model="employee.nTelefono2">
+                                <small id="t2Help" class="form-text text-muted">Inserte el teléfono del empleado.</small>
+                            </div>
+                            <!-- Estado civil -->
+                            <label for="newEmployeeNameForm">Estado Civil</label>
+                            <div class="form-group">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="radioCivilState1" name="radioCivilState" class="custom-control-input" ng-model="employee.cxEdocivil" value="S">
+                                    <label class="custom-control-label" for="radioCivilState1">Soltero</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="radioCivilState2" name="radioCivilState" class="custom-control-input" ng-model="employee.cxEdocivil" value="C">
+                                    <label class="custom-control-label" for="radioCivilState2">Casado</label>
+                                </div>
+                            </div>
+                            <!-- Servicio militar -->
+                            <label for="newEmployeeNameForm">Servicio militar</label>
+                            <div class="form-group">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="radioMilitarService1" name="radioMilitarService" class="custom-control-input" ng-model="employee.bServmilitar" value="S">
+                                    <label class="custom-control-label" for="radioMilitarService1">Sí</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="radioMilitarService2" name="radioMilitarService" class="custom-control-input" ng-model="employee.bServmilitar" value="N">
+                                    <label class="custom-control-label" for="radioMilitarService2">No</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">No, sácame de aquí</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="addEmployee()">Si, insertar</button>
+            </div>
+        </div>
+    </div>
+</div>
