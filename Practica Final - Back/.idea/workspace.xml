@@ -56,15 +56,8 @@
       <file leaf-file-name="Empleado.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/model/Empleado.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2788">
+            <state relative-caret-position="4012">
               <caret line="236" column="50" selection-start-line="236" selection-start-column="50" selection-end-line="236" selection-end-column="50" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#6102#6103#0" expanded="true" />
-                <element signature="e#6177#6178#0" expanded="true" />
-                <element signature="e#6321#6322#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -114,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/config/Database.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="239">
-              <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+              <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -216,40 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Practica Final - Back" type="58d84e3e:PackageViewProjectNode" />
-              <item name="2018" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="Practica Final - Back" type="58d84e3e:PackageViewProjectNode" />
-              <item name="2018" type="616d4139:PackageViewModuleNode" />
-              <item name="FS.PRAC.FINAL8" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Practica Final - Back" type="58d84e3e:PackageViewProjectNode" />
-              <item name="2018" type="616d4139:PackageViewModuleNode" />
-              <item name="FS.PRAC.FINAL8" type="1f31426a:PackageElementNode" />
-              <item name="controller" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Practica Final - Back" type="58d84e3e:PackageViewProjectNode" />
-              <item name="2018" type="616d4139:PackageViewModuleNode" />
-              <item name="FS.PRAC.FINAL8" type="1f31426a:PackageElementNode" />
-              <item name="model" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Practica Final - Back" type="58d84e3e:PackageViewProjectNode" />
-              <item name="2018" type="616d4139:PackageViewModuleNode" />
-              <item name="FS.PRAC.FINAL8" type="1f31426a:PackageElementNode" />
-              <item name="repository" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,7 +258,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -349,6 +307,41 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Practica Final - Back" type="58d84e3e:PackageViewProjectNode" />
+              <item name="2018" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="Practica Final - Back" type="58d84e3e:PackageViewProjectNode" />
+              <item name="2018" type="616d4139:PackageViewModuleNode" />
+              <item name="FS.PRAC.FINAL8" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Practica Final - Back" type="58d84e3e:PackageViewProjectNode" />
+              <item name="2018" type="616d4139:PackageViewModuleNode" />
+              <item name="FS.PRAC.FINAL8" type="1f31426a:PackageElementNode" />
+              <item name="controller" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Practica Final - Back" type="58d84e3e:PackageViewProjectNode" />
+              <item name="2018" type="616d4139:PackageViewModuleNode" />
+              <item name="FS.PRAC.FINAL8" type="1f31426a:PackageElementNode" />
+              <item name="model" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Practica Final - Back" type="58d84e3e:PackageViewProjectNode" />
+              <item name="2018" type="616d4139:PackageViewModuleNode" />
+              <item name="FS.PRAC.FINAL8" type="1f31426a:PackageElementNode" />
+              <item name="repository" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,6 +359,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -455,11 +449,12 @@
       <workItem from="1526279989188" duration="12841000" />
       <workItem from="1526451564604" duration="6022000" />
       <workItem from="1526538213558" duration="246000" />
+      <workItem from="1526545256888" duration="19000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74505000" />
+    <option name="totallyTimeSpent" value="74524000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -474,37 +469,37 @@
     <frame x="0" y="0" width="960" height="1040" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32908705" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32908705" />
       <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22" />
+      <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" weight="0.3288889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.59312636" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32908705" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32908705" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.32908705" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32908705" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21555555" />
-      <window_info anchor="right" id="Bean Validation" order="3" />
-      <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.59312636" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32908705" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.32908705" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32590234" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32908705" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
     </layout>
     <layout-to-restore>
@@ -614,13 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2856">
           <caret line="246" column="2" selection-start-line="246" selection-end-line="252" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#6102#6103#0" expanded="true" />
-            <element signature="e#6177#6178#0" expanded="true" />
-            <element signature="e#6321#6322#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,13 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1836">
           <caret line="108" column="9" lean-forward="true" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#6102#6103#0" expanded="true" />
-            <element signature="e#6177#6178#0" expanded="true" />
-            <element signature="e#6321#6322#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,13 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#6102#6103#0" expanded="true" />
-            <element signature="e#6177#6178#0" expanded="true" />
-            <element signature="e#6321#6322#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -790,13 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="106" selection-start-line="106" selection-end-line="106" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#6102#6103#0" expanded="true" />
-            <element signature="e#6177#6178#0" expanded="true" />
-            <element signature="e#6321#6322#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -886,10 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -944,15 +907,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/model/Empleado.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2788">
+        <state relative-caret-position="4012">
           <caret line="236" column="50" selection-start-line="236" selection-start-column="50" selection-end-line="236" selection-end-column="50" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#6102#6103#0" expanded="true" />
-            <element signature="e#6177#6178#0" expanded="true" />
-            <element signature="e#6321#6322#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1005,7 +961,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/config/Database.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
-          <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+          <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
         </state>
       </provider>
     </entry>
