@@ -248,11 +248,11 @@ public class Empleado {
 
 /*    public List<Proyecto> getProyectos() {
         return proyectos;
-    }
+    }*/
 
     public void setProyectos(List<Proyecto> proyectos) {
         this.proyectos = proyectos;
-    }*/
+    }
 
     /**Metodo que muestra el contenido del objeto Empleado*/
     @Override

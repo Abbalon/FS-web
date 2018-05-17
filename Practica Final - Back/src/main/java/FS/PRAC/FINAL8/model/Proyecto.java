@@ -62,6 +62,7 @@ public class Proyecto {
     /*@OneToMany(mappedBy = "proyecto")
     private List<EmpleadoProyecto> empleados;*/
 
+    /**Resuelve las join*/
     @JoinTable(name = "PR_EMPLEADOS_PROYECTO", joinColumns = {
             @JoinColumn(name = "id_Proyecto", nullable = false, updatable = false)
     },inverseJoinColumns = {
@@ -135,13 +136,13 @@ public class Proyecto {
         this.fFin = fFin;
     }
 
-/*    public List<Empleado> getEmpleados() {
+    public List<Empleado> getEmpleados() {
         return empleados;
     }
 
     public void setEmpleados(List<Empleado> empleados) {
         this.empleados = empleados;
-    }*/
+    }
 
     /**Método que muestra el contenido del objeto Proyecto*/
     @Override
