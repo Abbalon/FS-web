@@ -136,7 +136,7 @@
 <!--ShowInfoModal-->
 <div class="modal fade text-dark" id="checkShowProject" tabindex="-1" role="dialog" aria-labelledby="checkInsertLabelP"
      aria-hidden="true" ng-controller="ProjectsCtrl">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="checkShowProjectP">Mostrando información</h5>
@@ -150,7 +150,7 @@
                     <div class="card-header">
                         <h3 class="card-title">Datos de proyecto</h3>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body col">
 
                         <form id="showProject">
                             <div class="form-row">
@@ -159,65 +159,54 @@
                                     <label for="newProjectDescForm">Descrpción</label>
                                     <input type="text" class="form-control" id="newProjectDescForm"
                                            aria-describedby="descHelp" placeholder="Descripción del proyecto"
-                                           ng-model="project.txDescripcion">
-                                    <small id="descHelp" class="form-text text-muted">IDescriba el proyecto.
-                                    </small>
+                                           ng-model="project.txDescripcion" disabled>
                                 </div>
                                 <!-- Lugar -->
                                 <div class="form-group col-md-6">
                                     <label for="newProjectPlaceForm">Lugar</label>
                                     <input type="text" class="form-control" id="newProjectPlaceForm"
                                            aria-describedby="palceHelp" placeholder="Lugar del proyecto"
-                                           ng-model="project.txLugar">
-                                    <small id="palceHelp" class="form-text text-muted">Lugar donde se desarrolla el proyecto.
-                                    </small>
+                                           ng-model="project.txLugar" disabled>
                                 </div>
                             </div>
 
                             <div class="form-row">
                                 <!-- F. Inicio -->
-                                <div class="form-group col-md-4">
-                                    <label for="newProjectfAltForm">Fecha de início</label>
-                                    <input type="date" class="form-control" id="newProjectfAltForm" aria-describedby="fAltHelp" placeholder="dd-mm-aaaa" ng-model="project.fInicio">
-                                    <small id="fAltHelp" class="form-text text-muted">El formato fecha debe coincidir con "dd/mm/aaaa"</small>
+                                <div class="form-group col">
+                                    <label for="newProjectfAltForm">Fecha início</label>
+                                    <input type="date" class="form-control" id="newProjectfAltForm" aria-describedby="fAltHelp" placeholder="dd-mm-aaaa" ng-model="project.fInicio" disabled>
                                 </div>
                                 <!-- F. Fin -->
-                                <div class="form-group col-md-4">
-                                    <label for="newProjectfFinForm">Fecha de finalización</label>
-                                    <input type="date" class="form-control" id="newProjectfFinForm" aria-describedby="fFinHelp" placeholder="dd-mm-aaaa" ng-model="project.fFin">
-                                    <small id="fFinHelp" class="form-text text-muted">El formato fecha debe coincidir con "dd/mm/aaaa"</small>
+                                <div class="form-group col">
+                                    <label for="newProjectfFinForm">Fecha fin</label>
+                                    <input type="date" class="form-control" id="newProjectfFinForm" aria-describedby="fFinHelp" placeholder="dd-mm-aaaa" ng-model="project.fFin" disabled>
                                 </div>
-
+                                <!-- F. Baja -->
+                                <div class="form-group col">
+                                    <label for="newProjectfFinForm">Fecha Baja</label>
+                                    <input type="date" class="form-control" id="newProjectfBajaForm" aria-describedby="fBajaHelp" placeholder="dd-mm-aaaa" ng-model="project.fBaja" disabled>
+                                </div>
                             </div>
 
-                            <!-- Lugar -->
-                            <div class="form-group">
-                                <label for="newProjectPlaceForm">Descrpción</label>
-                                <input type="text" class="form-control" id="newProjectPlaceForm"
-                                       aria-describedby="palceHelp" placeholder="Lugar del proyecto"
-                                       ng-model="project.txLugar">
-                                <small id="palceHelp" class="form-text text-muted">Lugar donde se desarrolla el proyecto.
-                                </small>
-                            </div>
-                            <div class="form-group">
-                                <label for="newProjectObsForm">Observaciones</label>
-                                <input type="text" class="form-control" id="newProjectObsForm"
-                                       aria-describedby="obsHelp" placeholder="Observaciones del proyecto"
-                                       ng-model="project.txObservaciones">
-                                <small id="obsHelp" class="form-text text-muted">Observaciones del proyecto.
-                                </small>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="newProjectObsForm">Observaciones</label>
+                                    <textarea type="text" class="form-control" id="newProjectObsForm"
+                                           aria-describedby="obsHelp" placeholder="Observaciones del proyecto"
+                                           ng-model="project.txObservaciones" disabled>
+                                    </textarea>
+                                </div>
                             </div>
                         </form>
-
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
+<!--            <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">No, sácame de aquí</button>
                 <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="addProject()">Si,
                     insertar
                 </button>
-            </div>
+            </div>-->
         </div>
     </div>
 </div>
