@@ -246,13 +246,13 @@ public class Empleado {
         this.bServmilitar = bServmilitar.substring(0, 1);
     }
 
-/*    public List<Proyecto> getProyectos() {
+    /*public List<Proyecto> getProyectos() {
         return proyectos;
-    }
+    }*/
 
     public void setProyectos(List<Proyecto> proyectos) {
         this.proyectos = proyectos;
-    }*/
+    }
 
     /**Metodo que muestra el contenido del objeto Empleado*/
     @Override

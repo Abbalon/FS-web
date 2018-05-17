@@ -135,13 +135,13 @@ public class Proyecto {
         this.fFin = fFin;
     }
 
-/*    public List<Empleado> getEmpleados() {
+    public List<Empleado> getEmpleados() {
         return empleados;
     }
 
     public void setEmpleados(List<Empleado> empleados) {
         this.empleados = empleados;
-    }*/
+    }
 
     /**Método que muestra el contenido del objeto Proyecto*/
     @Override
