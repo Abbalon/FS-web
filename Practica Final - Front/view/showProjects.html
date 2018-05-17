@@ -36,7 +36,8 @@
                     <th scope="col">Accion</th>
                     </tfoot>
                     <tbody>
-                    <tr ng-repeat="project in projects">
+                    <tr ng-repeat="project in projects" data-toggle="modal"
+                        data-target="#checkShowProject">
                         <td>{{project.txDescripcion }}</td>
                         <td>{{project.fInicio | date:"dd-MM-yyyy"}}</td>
                         <td>{{project.fFin | date:"dd-MM-yyyy"}}</td>
@@ -61,6 +62,7 @@
 </div>
 
 <!-- Modals -->
+<!--Insert modal-->
 <div class="modal fade text-dark" id="checkInsertProject" tabindex="-1" role="dialog" aria-labelledby="checkInsertLabelP"
      aria-hidden="true" ng-controller="ProjectsCtrl">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -79,6 +81,77 @@
                     </div>
                     <div class="card-body">
                         <form id="newProject">
+                            <!-- Nombre -->
+                            <div class="form-group">
+                                <label for="newProjectDescForm">Descrpción</label>
+                                <input type="text" class="form-control" id="newProjectDescForm"
+                                       aria-describedby="descHelp" placeholder="Descripción del proyecto"
+                                       ng-model="project.txDescripcion">
+                                <small id="descHelp" class="form-text text-muted">IDescriba el proyecto.
+                                </small>
+                            </div>
+                            <!-- F. Inicio -->
+                            <div class="form-group">
+                                <label for="newProjectfAltForm">Fecha de início</label>
+                                <input type="date" class="form-control" id="newProjectfAltForm" aria-describedby="fAltHelp" placeholder="dd-mm-aaaa" ng-model="project.fInicio">
+                                <small id="fAltHelp" class="form-text text-muted">El formato fecha debe coincidir con "dd/mm/aaaa"</small>
+                            </div>
+                            <!-- F. Fin -->
+                            <div class="form-group">
+                                <label for="newProjectfFinForm">Fecha de finalización</label>
+                                <input type="date" class="form-control" id="newProjectfFinForm" aria-describedby="fFinHelp" placeholder="dd-mm-aaaa" ng-model="project.fFin">
+                                <small id="fFinHelp" class="form-text text-muted">El formato fecha debe coincidir con "dd/mm/aaaa"</small>
+                            </div>
+                            <!-- Lugar -->
+                            <div class="form-group">
+                                <label for="newProjectPlaceForm">Descrpción</label>
+                                <input type="text" class="form-control" id="newProjectPlaceForm"
+                                       aria-describedby="palceHelp" placeholder="Lugar del proyecto"
+                                       ng-model="project.txLugar">
+                                <small id="palceHelp" class="form-text text-muted">Lugar donde se desarrolla el proyecto.
+                                </small>
+                            </div>
+                            <div class="form-group">
+                                <label for="newProjectObsForm">Observaciones</label>
+                                <input type="text" class="form-control" id="newProjectObsForm"
+                                       aria-describedby="obsHelp" placeholder="Observaciones del proyecto"
+                                       ng-model="project.txObservaciones">
+                                <small id="obsHelp" class="form-text text-muted">Observaciones del proyecto.
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">No, sácame de aquí</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="addProject()">Si,
+                    insertar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--ShowInfoModal-->
+<div class="modal fade text-dark" id="checkShowProject" tabindex="-1" role="dialog" aria-labelledby="checkInsertLabelP"
+     aria-hidden="true" ng-controller="ProjectsCtrl">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="checkShowProjectP">Mostrando información</h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card w-auto text-dark mb-3">
+                    <div class="card-header">
+                        <h3 class="card-title">Datos de proyecto</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="aProject">
                             <!-- Nombre -->
                             <div class="form-group">
                                 <label for="newProjectDescForm">Descrpción</label>

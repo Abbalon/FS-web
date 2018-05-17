@@ -13,10 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Calendar;
 import java.util.List;
@@ -123,9 +120,9 @@ public class ProyectoController {
     /**
      * Muestra los proyectos cuya F_BAJA sea NULL
      * */
-    @RequestMapping(value = GET_PROYECTO, method = RequestMethod.GET)
+    @RequestMapping(value = GET_PROYECTOS, method = RequestMethod.GET)
     @ResponseBody
-    public List<Proyecto> getProyecto(){
+    public List<Proyecto> getProyectos(){
 
         logger.info("Showing all proyects");
         logger.info("");
@@ -140,5 +137,28 @@ public class ProyectoController {
         }
 
         return allProyecto;
+    }
+
+    /**
+     * Muestra la informacion de un proyecto
+     * */
+    @RequestMapping(value = GET_PROYECTO, method = RequestMethod.GET)
+    @ResponseBody
+    public Proyecto getProyecto(
+            @PathVariable("idPro") int idPro
+    ){
+
+        logger.info("Showing all proyects");
+        logger.info("");
+
+        Proyecto selectedProyect = null;
+
+        try{
+            selectedProyect = proyectoRepository.getProyectoByIdProyecto(idPro);
+        }catch (Exception e){
+            ManErrorControler.showError(logger, e);
+        }
+
+        return selectedProyect;
     }
 }
