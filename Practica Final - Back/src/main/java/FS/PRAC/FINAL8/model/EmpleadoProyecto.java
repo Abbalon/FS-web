@@ -20,10 +20,18 @@ import java.util.Calendar;
 @Table(name = "PR_EMPLEADOS_PROYECTO")
 public class EmpleadoProyecto {
 
-    /**
+     /**
      * Default void constructor
      * */
     public EmpleadoProyecto() {
+    }
+
+    /**Custom contructor*/
+    public EmpleadoProyecto(EmpleadoProyectoPK pk, Empleado empleado, Proyecto proyecto, Calendar fAlta) {
+        this.pk = pk;
+        this.empleado = empleado;
+        this.proyecto = proyecto;
+        this.fAlta = fAlta;
     }
 
     /**
@@ -49,12 +57,6 @@ public class EmpleadoProyecto {
     @ManyToOne
     @JoinColumn(name = "id_Proyecto", insertable = false, updatable = false)
     private Proyecto proyecto;
-
-
-    public EmpleadoProyecto(EmpleadoProyectoPK pk, Calendar fAlta) {
-        this.pk = pk;
-        this.fAlta = fAlta;
-    }
 
     /**
      * Getters & Setters

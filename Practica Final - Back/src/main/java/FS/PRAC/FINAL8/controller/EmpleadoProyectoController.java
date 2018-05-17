@@ -7,6 +7,7 @@
 package FS.PRAC.FINAL8.controller;
 
 import FS.PRAC.FINAL8.model.EmpleadoProyecto;
+import FS.PRAC.FINAL8.model.EmpleadoProyectoPK;
 import FS.PRAC.FINAL8.repository.EmpleadoProyectoRepository;
 import FS.PRAC.FINAL8.repository.EmpleadoRepository;
 import FS.PRAC.FINAL8.repository.ProyectoRepository;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.Calendar;
 import java.util.List;
 
 import static FS.PRAC.FINAL8.controller.RestURIConstants.*;
@@ -48,26 +50,29 @@ public class EmpleadoProyectoController {
      * */
     @RequestMapping(value = ADD_PR_EM, method = RequestMethod.POST)
     @ResponseBody
-    public EmpleadoProyecto addEmpleadoProyecto(
-                @RequestBody EmpleadoProyecto empleadoProyecto
+    public String addEmpleadoProyecto(
+                @RequestBody EmpleadoProyectoPK pk
             ){
         logger.info("Trying to asign a employee to a project");
         logger.info("");
         logger.info("Recived info:");
-        logger.info(empleadoProyecto.toString());
+        logger.info(pk.toString());
 
-        EmpleadoProyecto insertado = null;
+        EmpleadoProyecto insertado = new EmpleadoProyecto(
+                pk,
+                empleadoRepository.getOne(pk.getIdEmpleado()),
+                proyectoRepository.getOne(pk.getIdProyecto()),
+                Calendar.getInstance());
 
         String message = "Asignacion de empleado a proyecto: ";
 
         try{
-            if(!empleadoProyectoRepository.existsByPk(empleadoProyecto.getPk())){ //¿Está ya el usuario en el proyecto?
-                if(!empleadoRepository.existsByIdEmpleadoAndFBajaIsNull(empleadoProyecto.getPk().getIdEmpleado())){ //¿Está el usuario dado de baja?
-                    if(!proyectoRepository.existsByIdProyectoAndFBajaIsNullAndFFinIsNull(empleadoProyecto.getPk().getIdProyecto())){ //¿Está el proyecto dado de baja o fianlizado?
+            if(!empleadoProyectoRepository.existsByPk(insertado.getPk())){ //¿Está ya el usuario en el proyecto?
+                if(!empleadoRepository.existsByIdEmpleadoAndFBajaIsNull(insertado.getPk().getIdEmpleado())){ //¿Está el usuario dado de baja?
+                    if(!proyectoRepository.existsByIdProyectoAndFBajaIsNullAndFFinIsNull(insertado.getPk().getIdProyecto())){ //¿Está el proyecto dado de baja o fianlizado?
                         //TODO Verificar campos: fechas ...
-                        empleadoProyectoRepository.save(empleadoProyecto);
-                        message += "CORRECTA";
-                        insertado = empleadoProyecto;
+                        empleadoProyectoRepository.save(insertado);
+                        message += "CORRECTA: " + insertado.toString();
                     }else{
                         message += "Proyecto no dado de alta o finalizado.";
                     }
@@ -76,7 +81,7 @@ public class EmpleadoProyectoController {
                 }
             }
             else{
-                logger.info("Employee: '" + empleadoProyecto.getPk().getIdEmpleado() + "' already exists in the proyect " + empleadoProyecto.getPk().getIdProyecto());
+                logger.info("Employee: '" + insertado.getPk().getIdEmpleado() + "' already exists in the proyect " + insertado.getPk().getIdProyecto());
                 message += "ya EXISTE";
             }
 
@@ -86,7 +91,7 @@ public class EmpleadoProyectoController {
 
         logger.info(message);
 
-        return insertado;
+        return message;
     }
 
     /**
