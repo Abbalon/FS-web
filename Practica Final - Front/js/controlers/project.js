@@ -30,12 +30,28 @@ angular.module("angularJS")
             fFin:''
         };
 
+        $scope.proInfo = {
+            idProyecto:'',
+            txDescripcion:'',
+            txLugar:'',
+            txObservaciones:'',
+            fInicio:'',
+            fBaja:'',
+            fFin:''
+        };
+
         projectService.projects()
             .success(function (data) {
                 $scope.projects = data;
             });
-        $scope.delProject = function (project) {
+
+        $scope.getProjectInfo = function(project){
             console.log(project);
+            $scope.proInfo = project;
+            console.log($scope.proInfo.txDescripcion);
+        }
+
+        $scope.delProject = function (project) {
             projectService.delProject(project)
                 .success(function (data) {
                     $scope.reloadRoute();
@@ -43,8 +59,6 @@ angular.module("angularJS")
         }
 
         $scope.addProject = function () {
-            console.log("ADD");
-            console.log($scope.project);
             projectService.addProject($scope.project)
                 .then(function (data) {
                     $scope.reloadRoute();
