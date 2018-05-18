@@ -18,6 +18,4 @@ public interface ProyectoRepository extends JpaRepository<Proyecto, Integer> {
 
     /**Devuelve el proecto con esa id*/
     Proyecto getProyectoByIdProyecto(int idProyecto);
-
-
 }

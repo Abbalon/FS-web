@@ -39,7 +39,8 @@
                     <tbody>
                     <!--ng-click="getProjectInfo(project)"-->
                     <tr ng-repeat="project in projects" data-toggle="modal"
-                        data-target="#checkShowProject" ng-click="setProjectInfo(project)" title="Mostrar información del proyecto solicitado.">
+                        data-target="#checkShowProject" ng-click="setProjectInfo(project)"
+                        title="Mostrar información del proyecto solicitado.">
                         <td>{{project.txDescripcion }}</td>
                         <td>{{project.fInicio | date:"dd-MM-yyyy"}}</td>
                         <td>{{project.fFin | date:"dd-MM-yyyy"}}</td>
@@ -65,7 +66,8 @@
 
     <!-- Modals -->
     <!--Insert modal-->
-    <div class="modal fade text-dark" id="checkInsertProject" tabindex="-1" role="dialog" aria-labelledby="checkInsertLabelP"
+    <div class="modal fade text-dark" id="checkInsertProject" tabindex="-1" role="dialog"
+         aria-labelledby="checkInsertLabelP"
          aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -95,14 +97,21 @@
                                 <!-- F. Inicio -->
                                 <div class="form-group">
                                     <label for="newProjectfAltForm">Fecha de início</label>
-                                    <input type="date" class="form-control" id="newProjectfAltForm" aria-describedby="fAltHelp" placeholder="dd-mm-aaaa" ng-model="project.fInicio">
-                                    <small id="fAltHelp" class="form-text text-muted">El formato fecha debe coincidir con "dd/mm/aaaa"</small>
+                                    <input type="date" class="form-control" id="newProjectfAltForm"
+                                           aria-describedby="fAltHelp" placeholder="dd-mm-aaaa"
+                                           ng-model="project.fInicio">
+                                    <small id="fAltHelp" class="form-text text-muted">El formato fecha debe coincidir
+                                        con "dd/mm/aaaa"
+                                    </small>
                                 </div>
                                 <!-- F. Fin -->
                                 <div class="form-group">
                                     <label for="newProjectfFinForm">Fecha de finalización</label>
-                                    <input type="date" class="form-control" id="newProjectfFinForm" aria-describedby="fFinHelp" placeholder="dd-mm-aaaa" ng-model="project.fFin">
-                                    <small id="fFinHelp" class="form-text text-muted">El formato fecha debe coincidir con "dd/mm/aaaa"</small>
+                                    <input type="date" class="form-control" id="newProjectfFinForm"
+                                           aria-describedby="fFinHelp" placeholder="dd-mm-aaaa" ng-model="project.fFin">
+                                    <small id="fFinHelp" class="form-text text-muted">El formato fecha debe coincidir
+                                        con "dd/mm/aaaa"
+                                    </small>
                                 </div>
                                 <!-- Lugar -->
                                 <div class="form-group">
@@ -110,7 +119,8 @@
                                     <input type="text" class="form-control" id="newProjectPlaceForm"
                                            aria-describedby="palceHelp" placeholder="Lugar del proyecto"
                                            ng-model="project.txLugar">
-                                    <small id="palceHelp" class="form-text text-muted">Lugar donde se desarrolla el proyecto.
+                                    <small id="palceHelp" class="form-text text-muted">Lugar donde se desarrolla el
+                                        proyecto.
                                     </small>
                                 </div>
                                 <div class="form-group">
@@ -136,7 +146,8 @@
     </div>
 
     <!--ShowInfoModal-->
-    <div class="modal fade text-dark" id="checkShowProject" tabindex="-1" role="dialog" aria-labelledby="checkInsertLabelP"
+    <div class="modal fade text-dark" id="checkShowProject" tabindex="-1" role="dialog"
+         aria-labelledby="checkInsertLabelP"
          aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
@@ -155,13 +166,13 @@
                         </div>
                         <div class="card-body col">
 
-                            <form id="showProject" >
+                            <form id="showProject">
                                 <div class="form-row">
                                     <!-- Decripción -->
                                     <div class="form-group col-lg-6">
                                         <label for="newProjectDescForm">Descripción</label>
                                         <input type="text" class="form-control" id="ProjectDescForm"
-                                               aria-describedby="descHelp"  placeholder="{{proInfo.txDescripcion}}"
+                                               aria-describedby="descHelp" placeholder="{{proInfo.txDescripcion}}"
                                                readonly>
                                     </div>
                                     <!-- Lugar -->
@@ -176,17 +187,23 @@
                                     <!-- F. Inicio -->
                                     <div class="form-group col">
                                         <label for="newProjectfAltForm">Fecha início</label>
-                                        <input type="text" class="form-control" id="ProjectfAltForm" placeholder="{{proInfo.fInicio | date : 'dd/MM/yyyy'}}" aria-describedby="fAltHelp" readonly>
+                                        <input type="text" class="form-control" id="ProjectfAltForm"
+                                               placeholder="{{proInfo.fInicio | date : 'dd/MM/yyyy'}}"
+                                               aria-describedby="fAltHelp" readonly>
                                     </div>
                                     <!-- F. Fin -->
                                     <div class="form-group col">
                                         <label for="newProjectfFinForm">Fecha fin</label>
-                                        <input type="text" class="form-control" id="ProjectfFinForm" aria-describedby="fFinHelp" placeholder="{{proInfo.fFin| date : 'dd/MM/yyyy'}}" readonly>
+                                        <input type="text" class="form-control" id="ProjectfFinForm"
+                                               aria-describedby="fFinHelp"
+                                               placeholder="{{proInfo.fFin| date : 'dd/MM/yyyy'}}" readonly>
                                     </div>
                                     <!-- F. Baja -->
                                     <div class="form-group col">
                                         <label for="newProjectfFinForm">Fecha Baja</label>
-                                        <input type="text" class="form-control" id="ProjectfBajaForm" aria-describedby="fBajaHelp" placeholder="{{proInfo.fBaja| date : 'dd/MM/yyyy'}}" readonly>
+                                        <input type="text" class="form-control" id="ProjectfBajaForm"
+                                               aria-describedby="fBajaHelp"
+                                               placeholder="{{proInfo.fBaja| date : 'dd/MM/yyyy'}}" readonly>
                                     </div>
                                 </div>
 
@@ -194,7 +211,8 @@
                                     <div class="form-group col">
                                         <label for="newProjectObsForm">Observaciones</label>
                                         <textarea type="text" class="form-control" id="ProjectObsForm"
-                                                  aria-describedby="obsHelp" readonly>{{proInfo.txObservaciones}}</textarea>
+                                                  aria-describedby="obsHelp"
+                                                  readonly>{{proInfo.txObservaciones}}</textarea>
                                     </div>
                                 </div>
                             </form>
@@ -207,42 +225,39 @@
                             <h3 class="card-title">Empleados del proyecto:</h3>
                         </div>
                         <div class="card-body">
-                                <div class="row">
-                                    <!--Empleados asignados-->
-                                    <div class="list-group" ng-repeat="empleado in "
-                                    <div class="panel panel-default col-md-5">
-                                        <div class="panel-heading">Empleados asignados</div>
-                                        <div class="panel-body">Panel Content</div>
-                                    </div>
-                                    <!--Acciones-->
-                                    <div class="col-md-1">
-
-                                    </div>
-                                    <!--Empleados sin asignar-->
-                                    <div class="panel panel-default col-md-5">
-                                        <div class="panel-heading">Empleados sin asignar</div>
-                                        <div class="panel-body">
-                                            <select class="selectpicker" multiple>
-                                                <option>Mustard</option>
-                                                <option>Ketchup</option>
-                                                <option>Relish</option>
+                            <div class="container-fluid">
+                                <form name="AsigmentForm">
+                                    <div class="row">
+                                        <!--Empleados asignados-->
+                                        <div class="col-md-4 mr-auto text-left row">
+                                            <p href="#">Empleados asignados</p>
+                                            <select name="asignedEmployees" class="selectpicker" multiple>
+                                                <option value="{{employee.idEmpleado}}" ng-repeat="employee in employees">{{employee.txNombre}}
+                                                    {{employee.txApellido1}}
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <!--Acciones-->
+                                        <div class="col-md-2 mr-1 ml-1 btn-group-vertical">
+                                            <button type="button" class="btn btn-secondary"><</button>
+                                            <button type="button" class="btn btn-secondary">></button>
+                                        </div>
+                                        <!--Empleados asignados-->
+                                        <div class="col-md-4 ml-auto text-right row">
+                                            <p href="#">Empleados asignados</p>
+                                            <select name="unasignedEmployees" class="selectpicker" multiple>
+                                                <option value="{{employee.idEmpleado}}" ng-repeat="employee in employees">{{employee.txNombre}}
+                                                    {{employee.txApellido1}}
+                                                </option>
                                             </select>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-
                 </div>
-    <!--            <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No, sácame de aquí</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="addProject()">Si,
-                        insertar
-                    </button>
-                </div>-->
             </div>
         </div>
     </div>
-
 </div>

@@ -42,6 +42,21 @@ angular.module("angularJS")
             empleados:''
         };
 
+        $scope.employee = {
+            idEmpleado: '',
+            txNif: '',
+            txNombre: '',
+            txApellido1: '',
+            txApellido2: '',
+            txEmail: '',
+            nTelefono1: '',
+            fNacimiento: '',
+            fAlta: '',
+            cxEdocivil: '',
+            bServmilitar: ''
+        };
+
+
         projectService.projects()
             .success(function (data) {
                 $scope.projects = data;
@@ -49,6 +64,7 @@ angular.module("angularJS")
 
         $scope.setProjectInfo = function(project){
             $scope.proInfo = project;
+            $scope.employees = project.empleados;
         }
 
         $scope.delProject = function (project) {
