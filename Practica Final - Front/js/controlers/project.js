@@ -62,9 +62,15 @@ angular.module("angularJS")
                 $scope.projects = data;
             });
 
+        projectService.employees()
+            .success(function (data) {
+                $scope.allEmployees = data;
+            });
+
         $scope.setProjectInfo = function(project){
             $scope.proInfo = project;
             $scope.employees = project.empleados;
+            console.log($scope.employees);
         }
 
         $scope.delProject = function (project) {
@@ -77,7 +83,21 @@ angular.module("angularJS")
         $scope.addProject = function () {
             projectService.addProject($scope.project)
                 .then(function (data) {
+                    alert("Proyecto creado correctamente.");
                     $scope.reloadRoute();
                 });
+        }
+
+        $scope.assignEmployee = function (idPro, idEmp) {
+            // $scope.employees.splice()
+            $scope.pk= {
+                idProyecto: idPro,
+                idEmpleado: idEmp
+            }
+            console.log($scope.pk);
+            projectService.assignEmployee($scope.pk)
+                .success(function (data) {
+                    alert("Asignación correcta.");
+                })
         }
     }]);

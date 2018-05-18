@@ -3,7 +3,7 @@
 angular.module('angularJS')
     .factory('employeeService', ['$http', function ($http) {
         return {
-            /*Muestra todos los employees*/
+            /*Recupera todos los employees*/
             employees: function () {
                 return $http.get('http://localhost:8080/empleado');
             },

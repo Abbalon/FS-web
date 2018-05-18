@@ -7,10 +7,6 @@ angular.module('angularJS')
             projects: function () {
                 return $http.get('http://localhost:8080/proyecto');
             },
- /*           /!*Muestra info de un project*!/
-            getProjectInfo: function (idPro) {
-                return $http.get('http://localhost:8080/proyecto/'+idPro);
-            },*/
             /*Elimina un project*/
             delProject: function (project) {
                 return $http.put('http://localhost:8080/proyecto', project)
@@ -18,6 +14,16 @@ angular.module('angularJS')
             /*Crea un project*/
             addProject: function (project) {
                 return $http.post('http://localhost:8080/proyecto', project);
+            },
+            /*Recupera todos los employees*/
+            employees: function () {
+                return $http.get('http://localhost:8080/empleado');
+            },
+
+            /*Asignar empleado a proyecto*/
+            assignEmployee: function (pk) {
+                console.log(pk);
+                return $http.post('http://localhost:8080/prem',pk);
             }
         }
 }]);
