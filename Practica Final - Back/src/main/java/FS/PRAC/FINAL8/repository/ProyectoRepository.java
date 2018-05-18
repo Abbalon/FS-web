@@ -16,6 +16,8 @@ public interface ProyectoRepository extends JpaRepository<Proyecto, Integer> {
      * Devuelve si el proyecto tiene fecha de baja o está fianlizado*/
     boolean existsByIdProyectoAndFBajaIsNullAndFFinIsNull(int idProyecto);
 
-    /**Devuelve los empleados que esten asociados a un proyecto*/
+    /**Devuelve el proecto con esa id*/
     Proyecto getProyectoByIdProyecto(int idProyecto);
+
+
 }
