@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2409594d-4e74-425f-bd04-8f3b96f4d429" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica Final - Front/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica Final - Front/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica Final - Front/view/showProjects.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica Final - Front/view/showProjects.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -226,7 +227,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
@@ -237,55 +238,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="_0418" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practica final" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_0418" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practica final" type="462c0819:PsiDirectoryNode" />
-              <item name="SQL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_0418" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practica final" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_0418" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practica final" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_0418" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practica final" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_0418" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practica final" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="FINAL8" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="_0418" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practica final" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -364,6 +316,55 @@
               <item name="2018" type="616d4139:PackageViewModuleNode" />
               <item name="FS.PRAC.FINAL8" type="1f31426a:PackageElementNode" />
               <item name="repository" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="_0418" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Practica final" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_0418" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Practica final" type="462c0819:PsiDirectoryNode" />
+              <item name="SQL" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_0418" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Practica final" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_0418" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Practica final" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_0418" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Practica final" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_0418" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Practica final" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="FINAL8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="_0418" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Practica final" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -478,7 +479,7 @@
       <workItem from="1526451564604" duration="6022000" />
       <workItem from="1526538213558" duration="246000" />
       <workItem from="1526545256888" duration="7630000" />
-      <workItem from="1526624200961" duration="179000" />
+      <workItem from="1526624200961" duration="765000" />
     </task>
     <task id="LOCAL-00001" summary="Uncommet list empleados and proyectos">
       <created>1526545452492</created>
@@ -512,7 +513,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82135000" />
+    <option name="totallyTimeSpent" value="82900000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -524,7 +525,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1040" extended-state="1" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -540,7 +541,7 @@
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32908705" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32908705" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10666667" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3911111" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" weight="0.3288889" />
