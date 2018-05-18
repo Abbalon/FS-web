@@ -27,7 +27,8 @@ angular.module("angularJS")
             txObservaciones:'',
             fInicio:'',
             fBaja:'',
-            fFin:''
+            fFin:'',
+            empleados:''
         };
 
         $scope.proInfo = {
@@ -37,7 +38,8 @@ angular.module("angularJS")
             txObservaciones:'',
             fInicio:'',
             fBaja:'',
-            fFin:''
+            fFin:'',
+            empleados:''
         };
 
         projectService.projects()
@@ -45,10 +47,8 @@ angular.module("angularJS")
                 $scope.projects = data;
             });
 
-        $scope.getProjectInfo = function(project){
-            console.log(project);
+        $scope.setProjectInfo = function(project){
             $scope.proInfo = project;
-            console.log($scope.proInfo.txDescripcion);
         }
 
         $scope.delProject = function (project) {

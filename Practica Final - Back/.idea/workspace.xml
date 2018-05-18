@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2409594d-4e74-425f-bd04-8f3b96f4d429" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Practica Final - Front/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica Final - Front/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica Final - Front/js/controlers/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica Final - Front/js/controlers/project.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Practica Final - Front/view/showProjects.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica Final - Front/view/showProjects.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -59,7 +61,7 @@
       <file leaf-file-name="Empleado.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/model/Empleado.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2890">
+            <state>
               <caret line="248" column="6" selection-start-line="248" selection-start-column="4" selection-end-line="250" selection-end-column="7" />
               <folding>
                 <element signature="e#6261#6262#0" expanded="true" />
@@ -69,50 +71,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Proyecto.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Proyecto.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/model/Proyecto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
-              <caret line="141" column="56" selection-start-line="141" selection-start-column="56" selection-end-line="141" selection-end-column="56" />
+            <state relative-caret-position="846">
+              <caret line="139" column="5" lean-forward="true" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
                 <element signature="e#3224#3225#0" expanded="true" />
                 <element signature="e#3256#3257#0" expanded="true" />
+                <element signature="e#3314#3315#0" expanded="true" />
                 <element signature="e#3356#3357#0" expanded="true" />
                 <element signature="method#toString#0;class#Proyecto#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmpleadoProyecto.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/model/EmpleadoProyecto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProyectoRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/repository/ProyectoRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProyectoController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/controller/ProyectoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="139" column="5" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#addProyecto#0;class#ProyectoController#0" />
-                <element signature="method#delProyecto#0;class#ProyectoController#0" />
               </folding>
             </state>
           </provider>
@@ -132,18 +103,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1003">
               <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmpleadoProyectoRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/repository/EmpleadoProyectoRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -228,7 +187,6 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -479,7 +437,7 @@
       <workItem from="1526451564604" duration="6022000" />
       <workItem from="1526538213558" duration="246000" />
       <workItem from="1526545256888" duration="7630000" />
-      <workItem from="1526624200961" duration="765000" />
+      <workItem from="1526624200961" duration="2057000" />
     </task>
     <task id="LOCAL-00001" summary="Uncommet list empleados and proyectos">
       <created>1526545452492</created>
@@ -509,11 +467,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526553166160</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="mostrar la info de un proyecto">
+      <created>1526625467677</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1526625467677</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82900000" />
+    <option name="totallyTimeSpent" value="84192000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -525,7 +490,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -536,12 +501,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3292683" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32908705" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32908705" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3911111" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3911111" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" weight="0.3288889" />
@@ -549,7 +514,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.27494457" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27494457" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -687,6 +652,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#3224#3225#0" expanded="true" />
             <element signature="e#3256#3257#0" expanded="true" />
+            <element signature="e#3314#3315#0" expanded="true" />
             <element signature="e#3356#3357#0" expanded="true" />
             <element signature="method#toString#0;class#Proyecto#0" />
           </folding>
@@ -763,6 +729,7 @@
             <element signature="imports" expanded="true" />
             <element signature="e#3224#3225#0" expanded="true" />
             <element signature="e#3256#3257#0" expanded="true" />
+            <element signature="e#3314#3315#0" expanded="true" />
             <element signature="e#3356#3357#0" expanded="true" />
             <element signature="method#toString#0;class#Proyecto#0" />
           </folding>
@@ -968,7 +935,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/model/Empleado.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2890">
+        <state>
           <caret line="248" column="6" selection-start-line="248" selection-start-column="4" selection-end-line="250" selection-end-column="7" />
           <folding>
             <element signature="e#6261#6262#0" expanded="true" />
@@ -984,25 +951,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/model/Proyecto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="141" column="56" selection-start-line="141" selection-start-column="56" selection-end-line="141" selection-end-column="56" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#3224#3225#0" expanded="true" />
-            <element signature="e#3256#3257#0" expanded="true" />
-            <element signature="e#3356#3357#0" expanded="true" />
-            <element signature="method#toString#0;class#Proyecto#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/controller/EmpleadoProyectoController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
           <caret line="157" column="25" lean-forward="true" selection-start-line="157" selection-start-column="25" selection-end-line="157" selection-end-column="25" />
+          <folding>
+            <element signature="method#addEmpleadoProyecto#0;class#EmpleadoProyectoController#0" />
+            <element signature="method#delEmpleadoProyecto#0;class#EmpleadoProyectoController#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,13 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/repository/ProyectoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1029,12 +978,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/controller/ProyectoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="139" column="5" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
+        <state relative-caret-position="565">
+          <caret line="138" column="27" lean-forward="true" selection-start-line="138" selection-start-column="27" selection-end-line="138" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#addProyecto#0;class#ProyectoController#0" />
             <element signature="method#delProyecto#0;class#ProyectoController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/repository/ProyectoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FS/PRAC/FINAL8/model/Proyecto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="139" column="5" lean-forward="true" selection-start-line="139" selection-start-column="5" selection-end-line="139" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3224#3225#0" expanded="true" />
+            <element signature="e#3256#3257#0" expanded="true" />
+            <element signature="e#3314#3315#0" expanded="true" />
+            <element signature="e#3356#3357#0" expanded="true" />
+            <element signature="method#toString#0;class#Proyecto#0" />
           </folding>
         </state>
       </provider>
